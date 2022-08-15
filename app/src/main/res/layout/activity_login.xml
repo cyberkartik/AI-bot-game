@@ -33,7 +33,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/material_dynamic_primary60"/>
+        android:background="@color/material_dynamic_primary60">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="108dp"
+            android:backgroundTint="@color/white"
+            android:elevation="35dp"
+            android:src="@drawable/google"
+            app:layout_constraintEnd_toStartOf="@+id/fab_apple"
+            tools:layout_editor_absoluteY="442dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_apple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:elevation="35dp"
+            android:src="@drawable/apple"
+            tools:layout_editor_absoluteX="269dp"
+            tools:layout_editor_absoluteY="442dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/view_pager"
@@ -57,16 +79,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_google"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:src="@drawable/upper"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-<!--        app:layout_constraintBaseline_toBottomOf="@+id/view_pager"/>-->
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+
+
+
+    <!--        app:layout_constraintBaseline_toBottomOf="@+id/view_pager"/>-->
 
 
 
